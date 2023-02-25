@@ -1,0 +1,65 @@
+@media (max-width: 1268px) {
+  .hero-container-p1 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding-left: 0 !important;
+
+  }
+
+  .hero-container-p2 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  div.my-image-container {
+    clip-path: none !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-title div {
+    text-align: center !important;
+  }
+
+  .hero-title .em-700 {
+    text-align: center !important;
+  }
+
+  .hero-subtitle div {
+    text-align: center !important;
+  }
+
+  .hire-me-here {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1268px) {
+  .years-of-experience {
+    left: 112px;
+    bottom: 18px;
+  }
+
+  .hero-container-p1 {
+    margin-left: 0;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-title {
+    font-size: 58px;
+  }
+
+  .hero-subtitle {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 568px) {
+  nav {
+    margin: 32px 0 0 32px !important;
+  }
+
+}

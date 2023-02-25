@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PortfolioWebsite</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <!-- Roboto Light theme -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <header>
+    <nav class="d-flex" id="navbar">
+      <div class="d-flex col-4 usefull-links">
+        <div>
+          About Me
+        </div>
+        <div>
+          Portfolio
+        </div>
+        <div>
+          Cooperation
+        </div>
+      </div>
+      <div class="logo-icon-container col-4">
+      </div>
+      <div class="col-4 d-flex contact-me-btn-container">
+        <div class="contact-me-btn">
+          Contactame
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+
+<svg width="0" height="0">
+  <defs>
+    <clipPath id="myClip">
+      <circle cx="280" cy="250" r="250" />
+     
+      <polygon points="280,0 1195,0 1195,800 -150,800"/>
+    </clipPath>
+  </defs>
+</svg>

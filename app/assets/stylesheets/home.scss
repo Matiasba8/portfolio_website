@@ -1,0 +1,113 @@
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  margin: 32px 0 0 108px;
+}
+
+.contact-me-btn {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1E1E1;
+  border-radius: 16px;
+  font-size: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: 32px;
+}
+
+
+
+.em-700 {
+  font-weight: 700;
+}
+
+.usefull-links {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 21px;
+  gap: 32px;
+}
+
+/* Hero section */
+.hero-section {
+  padding: 8.8rem 0 9.6rem 0;
+  flex-wrap: wrap-reverse;
+}
+
+.hero-subtitle {
+  margin-top: 16px;
+  font-size: 30px;
+}
+
+.hero-container-p1 {
+  margin-left: 108px;
+}
+
+.hero-container-p2 {
+  position: relative;
+}
+
+.hero-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 76px;
+}
+
+.my-image {
+  width: 560px;
+  overflow: hidden;
+}
+
+.my-image-container {
+  clip-path: url(#myClip);
+  background-color: #FE5A02;
+  width: 100%;
+}
+
+.years-of-experience {
+  position: absolute;
+  background-color: #241F21;
+  font-family: 'Quicksand', sans-serif;
+  padding: 16px 24px 16px 24px;
+  border-radius: 8px;
+  bottom: 62px;
+  left: -90px;
+  z-index: 1;
+}
+
+.years {
+  color: white;
+  font-weight: 700;
+
+  font-size: 36px;
+}
+
+.year-label {
+  color: white;
+  font-size: 26px;
+}
+
+.hire-me-here>div {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin-top: 24px;
+  padding: 12px 24px;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+}
+
+.btn-mobile-nav {
+  display: flex;
+  padding-right: 16px;
+  justify-content: end;
+}
