@@ -34,6 +34,10 @@
         </div>
       </div>
     </nav>
+    <button class="btn-mobile-nav col-12">
+      <%= inline_svg_tag("icons/reorder-three-outline.svg", width: 50, class: "toggle-menu")%>
+      <%= inline_svg_tag("icons/close-outline.svg", width: 50, class: "close-menu")%>
+    </button>
   </header>
   <body>
     <%= yield %>
