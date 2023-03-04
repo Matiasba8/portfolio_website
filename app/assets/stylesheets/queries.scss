@@ -115,3 +115,17 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 360px) {
+  .hero-container-p1 {
+    padding: 0px 24px 0 24px !important;
+
+    .hero-title {
+      font-size: 52px;
+    }
+
+    .hero-subtitle {
+      font-size: 20px;
+    }
+  }
+}

@@ -7,4 +7,60 @@
   background-color: #FE5A02;
   color: white;
   font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.default-btn:hover {
+  transform: translateY(-10px);
+  background-color: #e55102;
+}
+
+// Card component
+// Card
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background: #07182E;
+  position: absolute;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card div {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 170%;
+  background-image: linear-gradient(180deg, #FE5A02, rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #241F21;
+  ;
+  inset: 5px;
+  border-radius: 15px;
 }
