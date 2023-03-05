@@ -99,6 +99,27 @@
   .toggle-menu {
     display: inline-flex;
   }
+
+  .years-of-experience {
+    top: 0;
+    right: 0;
+    left: unset;
+    bottom: unset;
+    transform: translate(-15%, 15%);
+    padding: 8px 14px 8px 14px;
+    border-radius: 20px;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    background-image: linear-gradient(180deg, #FE5A02, rgb(255, 48, 255));
+    height: 50%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+    transform: translate(0, 0);
+  }
 }
 
 @media (max-width: 430px) {
