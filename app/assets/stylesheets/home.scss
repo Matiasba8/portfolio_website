@@ -180,3 +180,81 @@ nav.mobile-navbar {
   z-index: 99;
   margin: 0 !important;
 }
+
+//Programming languages section
+.programming-languages-section {
+  padding: 2.8rem 3.8rem 9.6rem 13.8rem;
+}
+
+.language-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 56px;
+  margin-bottom: 32px;
+
+}
+
+.programming-languages-container {
+  gap: 16px;
+}
+
+.lang-logo {
+  width: 108px;
+  z-index: 1;
+}
+
+.lang-card-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.on-hover-slider {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 478px;
+  overflow: hidden !important;
+}
+
+.lang-card-container:hover {
+  .on-hover-slider {
+    transform: translate(0, -1.5rem);
+    overflow: unset;
+  }
+
+  .slider-inner-container {
+    transform: translate(29%, -0.3rem);
+    // box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  }
+}
+
+.slider-container {
+  align-items: center;
+  height: 100%;
+}
+
+.slider-inner-container {
+  position: relative;
+  border-radius: 0 30px 30px 0;
+  height: 75%;
+  width: 300px;
+  background-color: #212121;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: all ease-in-out 0.5s;
+  transform: translateX(-100%);
+}
+
+.lang-exp {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ruby-card-cc.active,
+.javascript-card-cc.active {
+  margin-right: 180px;
+}
