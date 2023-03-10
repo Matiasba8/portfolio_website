@@ -1,5 +1,61 @@
 import './add_jquery'
 
+function disable_programming_lang_sliders(win_size){
+  // if win width is smaller than 550px then we need to disable the slider content
+  if (win_size.width() <= 550){
+    $('.ruby-card-cc').find('.lang-card-container').addClass("disabled");
+    $('.ruby-card-cc').addClass("disabled");
+
+    $('.javascript-card-cc').find('.lang-card-container').addClass("disabled");
+    $('.javascript-card-cc').addClass("disabled");
+
+    $('.python-card-cc').find('.lang-card-container').addClass("disabled");
+    $('.python-card-cc').addClass("disabled");
+  }
+  else{
+    $('.ruby-card-cc').find('.lang-card-container').removeClass("disabled");
+    $('.ruby-card-cc').removeClass("disabled");
+
+    $('.javascript-card-cc').find('.lang-card-container').removeClass("disabled");
+    $('.javascript-card-cc').removeClass("disabled");
+
+    $('.python-card-cc').find('.lang-card-container').removeClass("disabled");
+    $('.python-card-cc').removeClass("disabled");
+  }
+}
+
+function activate_programming_lang_sliders_effects(){
+  //Ruby
+  $(".ruby-card-cc").on("mouseover", function () {
+    $('.ruby-card-cc').addClass('active');
+  });
+  $(".ruby-card-cc").on("mouseleave", function () {
+  setTimeout(function() {
+    $('.ruby-card-cc').removeClass('active');
+  }, 500);
+  });
+
+  //JavaScript
+  $(".javascript-card-cc").on("mouseover", function () {
+  $('.javascript-card-cc').addClass('active');
+  });
+  $(".javascript-card-cc").on("mouseleave", function () {
+  setTimeout(function() {
+  $('.javascript-card-cc').removeClass('active');
+  }, 500);
+  });
+
+  //Python
+  $(".python-card-cc").on("mouseover", function () {
+  $('.python-card-cc').addClass('active');
+  });
+  $(".python-card-cc").on("mouseleave", function () {
+  setTimeout(function() {
+  $('.python-card-cc').removeClass('active');
+  }, 500);
+  });
+}
+
 // Toggle and untogle mobile navigations
 $('body').on('click', '.toggle-menu', function(){
   $('#navbar').toggleClass('mobile-navbar');  // for styles
@@ -48,47 +104,9 @@ $(window).on('resize load', function(){
     $('.programming-languages-container').removeClass("row");
   }
 
-  // if win width is smaller than 550px then we need to disable the slider content
-  if (win.width() <= 550){
-    $('.ruby-card-cc').find('.lang-card-container').addClass("disabled");
-    $('.ruby-card-cc').addClass("disabled");
-
-    $('.javascript-card-cc').find('.lang-card-container').addClass("disabled");
-    $('.javascript-card-cc').addClass("disabled");
-
-    $('.python-card-cc').find('.lang-card-container').addClass("disabled");
-    $('.python-card-cc').addClass("disabled");
-  }
-  else{
-    $('.ruby-card-cc').find('.lang-card-container').removeClass("disabled");
-    $('.ruby-card-cc').removeClass("disabled");
-
-    $('.javascript-card-cc').find('.lang-card-container').removeClass("disabled");
-    $('.javascript-card-cc').removeClass("disabled");
-
-    $('.python-card-cc').find('.lang-card-container').removeClass("disabled");
-    $('.python-card-cc').removeClass("disabled");
-  }
+  disable_programming_lang_sliders(win);
 
 });
 
+activate_programming_lang_sliders_effects();
 
-// On mouse over ruby we just add col-12
-$(".ruby-card-cc").on("mouseover", function () {
-    $('.ruby-card-cc').addClass('active');
-});
-$(".ruby-card-cc").on("mouseleave", function () {
-  setTimeout(function() {
-    $('.ruby-card-cc').removeClass('active');
-}, 500);
-});
-
-// On mouse over ruby we just add col-12
-$(".javascript-card-cc").on("mouseover", function () {
-  $('.javascript-card-cc').addClass('active');
-});
-$(".javascript-card-cc").on("mouseleave", function () {
-setTimeout(function() {
-  $('.javascript-card-cc').removeClass('active');
-}, 500);
-});

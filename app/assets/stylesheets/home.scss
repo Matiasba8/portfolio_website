@@ -257,7 +257,8 @@ nav.mobile-navbar {
 
 // Give space for the slider when si active the container
 .ruby-card-cc:not(.disabled).active,
-.javascript-card-cc:not(.disabled).active {
+.javascript-card-cc:not(.disabled).active,
+.python-card-cc:not(.disabled).active {
   margin-right: 308px;
 }
 
