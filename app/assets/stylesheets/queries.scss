@@ -50,6 +50,33 @@
     margin-left: 0;
     padding-left: 100px;
   }
+
+  // Programming languages section
+  .programming-languages-section {
+    padding: 0 30px;
+  }
+
+  .programming-lang-title,
+  .programming-lang-pd {
+    text-align: center;
+  }
+
+  .programming-languages-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .programming-languages-container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+  }
 }
 
 @media (max-width: 680px) {
@@ -59,6 +86,10 @@
 
   .hero-subtitle {
     font-size: 26px;
+  }
+
+  .programming-languages-section {
+    padding: 0 32px;
   }
 }
 
@@ -74,6 +105,12 @@
   .year-label {
     font-size: 18px !important;
   }
+
+  // Programming languages section
+  .programming-lang-title {
+    font-size: 46px;
+  }
+
 
 }
 
@@ -149,5 +186,9 @@
     .hero-subtitle {
       font-size: 20px;
     }
+  }
+
+  .programming-lang-title {
+    font-size: 36px;
   }
 }

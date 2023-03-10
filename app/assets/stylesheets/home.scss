@@ -184,6 +184,7 @@ nav.mobile-navbar {
 //Programming languages section
 .programming-languages-section {
   padding: 2.8rem 3.8rem 9.6rem 13.8rem;
+  overflow: hidden;
 }
 
 .language-title {
@@ -217,7 +218,7 @@ nav.mobile-navbar {
   overflow: hidden !important;
 }
 
-.lang-card-container:hover {
+.lang-card-container:not(.disabled):hover {
   .on-hover-slider {
     transform: translate(0, -1.5rem);
     overflow: unset;
@@ -254,7 +255,19 @@ nav.mobile-navbar {
   font-weight: 700;
 }
 
-.ruby-card-cc.active,
-.javascript-card-cc.active {
-  margin-right: 180px;
+// Give space for the slider when si active the container
+.ruby-card-cc:not(.disabled).active,
+.javascript-card-cc:not(.disabled).active {
+  margin-right: 308px;
+}
+
+.ruby-card-cc,
+.javascript-card-cc,
+.python-card-cc {
+  transition: all 0.5s;
+}
+
+.programming-lang-pd {
+  font-size: 26px;
+  font-weight: 500;
 }

@@ -101,3 +101,12 @@
   border: #f2295bf0 0.2em solid;
   border-radius: 2.5rem 0 2.5rem 0;
 }
+
+//Personalized styles
+.card-lang.javascript-lang:hover {
+  border: #F7DF1E 0.2em solid !important;
+}
+
+.card-lang.python-lang:hover {
+  border: #3F7CAD 0.2em solid !important;
+}

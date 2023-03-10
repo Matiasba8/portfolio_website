@@ -37,25 +37,58 @@ $(window).on('resize load', function(){
       container_year_exp.append('<div class="year-label">year experience</div>')
     }
   }
+
+
+
+  // Programming languages container if less 1200 we make it to row to column each element 
+  if (win.width() <= 1200){
+    $('.programming-languages-container').addClass("row");
+  } 
+  else{
+    $('.programming-languages-container').removeClass("row");
+  }
+
+  // if win width is smaller than 550px then we need to disable the slider content
+  if (win.width() <= 550){
+    $('.ruby-card-cc').find('.lang-card-container').addClass("disabled");
+    $('.ruby-card-cc').addClass("disabled");
+
+    $('.javascript-card-cc').find('.lang-card-container').addClass("disabled");
+    $('.javascript-card-cc').addClass("disabled");
+
+    $('.python-card-cc').find('.lang-card-container').addClass("disabled");
+    $('.python-card-cc').addClass("disabled");
+  }
+  else{
+    $('.ruby-card-cc').find('.lang-card-container').removeClass("disabled");
+    $('.ruby-card-cc').removeClass("disabled");
+
+    $('.javascript-card-cc').find('.lang-card-container').removeClass("disabled");
+    $('.javascript-card-cc').removeClass("disabled");
+
+    $('.python-card-cc').find('.lang-card-container').removeClass("disabled");
+    $('.python-card-cc').removeClass("disabled");
+  }
+
 });
 
 
 // On mouse over ruby we just add col-12
-$(".ruby-logo").on("mouseover", function () {
+$(".ruby-card-cc").on("mouseover", function () {
     $('.ruby-card-cc').addClass('active');
 });
-$(".ruby-logo").on("mouseleave", function () {
+$(".ruby-card-cc").on("mouseleave", function () {
   setTimeout(function() {
     $('.ruby-card-cc').removeClass('active');
-}, 800);
+}, 500);
 });
 
 // On mouse over ruby we just add col-12
-$(".javascript-logo").on("mouseover", function () {
+$(".javascript-card-cc").on("mouseover", function () {
   $('.javascript-card-cc').addClass('active');
 });
-$(".javascript-logo").on("mouseleave", function () {
+$(".javascript-card-cc").on("mouseleave", function () {
 setTimeout(function() {
   $('.javascript-card-cc').removeClass('active');
-}, 800);
+}, 500);
 });
