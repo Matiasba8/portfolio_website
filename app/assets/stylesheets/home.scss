@@ -182,7 +182,8 @@ nav.mobile-navbar {
 }
 
 //Programming languages section
-.programming-languages-section {
+.programming-languages-section,
+.projects-section {
   padding: 2.8rem 3.8rem 9.6rem 13.8rem;
   overflow: hidden;
 }
@@ -190,6 +191,7 @@ nav.mobile-navbar {
 .language-title {
   font-family: "Quicksand", sans-serif;
   font-size: 56px;
+  font-weight: 600;
   margin-bottom: 32px;
 
 }
@@ -271,4 +273,35 @@ nav.mobile-navbar {
 .programming-lang-pd {
   font-size: 26px;
   font-weight: 500;
+}
+
+//Projects Section
+.projects-section {
+  .title {
+    font-family: "Quicksand", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+  }
+
+  .project-fiter-container {
+    display: flex;
+    align-items: center;
+
+    .all-projects-title {
+      font-family: "Quicksand", sans-serif;
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+    .filter-icon-container {
+      padding: 8px;
+      background: #241F21;
+      border-radius: 8px;
+      margin-left: 16px;
+    }
+
+    .filter-icon {
+      color: white;
+    }
+  }
 }

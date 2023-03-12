@@ -1,0 +1,15 @@
+<% if params[:lang_type] == "Ruby"%>
+  $('#languages-experience-modal').find('.modal-header').html('Ruby Experience');
+  $('#languages-experience-modal').find('.card2').addClass('ruby-style'); // style the card with ruby color
+  $('#languages-experience-modal').find('.card2').removeClass('javascript-style'); // style the card with ruby color
+  $('#languages-experience-modal').find('.card2').removeClass('python-style'); // style the card with ruby color
+  $('#languages-experience-modal').find('.modal-body').html('<%= j render partial: "home/languages_modal_body/ruby"%>');
+<% elsif params[:lang_type] == "Javascript"%>
+  $('#languages-experience-modal').find('.modal-header').html('Javascript Experience');
+  $('#languages-experience-modal').find('.card2').addClass('javascript-style'); 
+  $('#languages-experience-modal').find('.card2').removeClass('ruby-style'); // style the card with ruby color
+  $('#languages-experience-modal').find('.card2').removeClass('python-style'); // style the card with ruby color
+  $('#languages-experience-modal').find('.modal-body').html('<%= j render partial: "home/languages_modal_body/javascript"%>');
+<% end%>
+$('.loader').removeClass('active');
+$('#languages-experience-modal').toggleClass('active');

@@ -110,3 +110,38 @@ $(window).on('resize load', function(){
 
 activate_programming_lang_sliders_effects();
 
+// if ruby card cc
+$('body').on('click', '.ruby-card-cc', function(e) {
+
+  $('.loader').toggleClass('active');
+
+  $.ajax({
+    type: "POST",
+    url: $(this).data('url'),
+    data: {lang_type: "Ruby"},
+    dataType: "script",
+  });
+});
+
+$('body').on('click', '.javascript-card-cc', function(e) {
+
+  $('.loader').removeClass('active');
+
+
+  $.ajax({
+    type: "POST",
+    url: $(this).data('url'),
+    data: {lang_type: "Javascript"},
+    dataType: "script",
+    success : function(data) {
+    }
+
+  });
+});
+
+
+$('body').on('click', '.close-modal', function(e) {
+  console.log("modal closed")
+  $('#languages-experience-modal').toggleClass('active');
+
+});

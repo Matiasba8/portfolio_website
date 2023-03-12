@@ -18,7 +18,7 @@
       <div class="hire-me-container">
         <div class="hire-me-here ">
           <div class="default-btn">
-            Contact Me
+            Hire Me
           </div>
         </div>
       </div>
@@ -37,11 +37,11 @@
   <section class="programming-languages-section">
     <div class="language-title col-12">
       <div class="programming-lang-title">Programming Languagues </div>
-      <div class="programming-lang-pd"> (hover elements to see my experience) </div>
+      <div class="programming-lang-pd"> (hover elements to see my experience, for more detail click it) </div>
     </div>
     <div class="programming-languages-container d-flex">
       <div class="d-flex justify-content-center">
-        <div class="ruby-card-cc w-fit-content">
+        <div class="ruby-card-cc w-fit-content" data-url="<%= change_modal_data_url %>">
           <div class="lang-card-container">
             <div class="ruby-lang card-lang card">
               <%= image_tag("icons/ruby_logo.svg", class: "lang-logo ruby-logo")%>
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <div class="javascript-card-cc">
+        <div class="javascript-card-cc" data-url="<%= change_modal_data_url %>">
           <div class="lang-card-container">
             <div class="javascript-lang card-lang card">
               <%= image_tag("icons/javascript_logo.svg", class: "lang-logo javascript-logo")%>
@@ -75,7 +75,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <div class="python-card-cc">
+        <div class="python-card-cc" data-url="<%= change_modal_data_url %>">
           <div class="lang-card-container">
             <div class="python-lang card-lang card">
               <%= image_tag("icons/python_logo.svg", class: "lang-logo python-logo", width: 108, height: 108)%>
@@ -93,5 +93,51 @@
       </div>
     </div>
   </section>
+  <section class="projects-section">
+    <div class="d-flex align-items-center">
+      <div class="title">
+        Projects
+      </div>
+      <div class="project-fiter-container ms-auto">
+        <span class="all-projects-title"> All projects</span>
+        <div class="filter-icon-container">
+          <%= inline_svg_tag("icons/filter.svg", width: 30, height: 30, class: "filter-icon") %>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+<!-- MODAL HOME  -->
+<div class="modal-container fade" id="languages-experience-modal">
+  <div class="card2">
+    <div class="card3 scrollbar">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+      </div>
+      <%= inline_svg_tag("icons/close-outline.svg", width: 30, height: 30, class: "close-modal")%>
+    </div>
+  </div>
+</div>
+<!-- LOADER HOME  -->
+<div class="loader loader-background">
+  <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster center-position">
+    <div class="wheel"></div>
+    <div class="hamster">
+      <div class="hamster__body">
+        <div class="hamster__head">
+          <div class="hamster__ear"></div>
+          <div class="hamster__eye"></div>
+          <div class="hamster__nose"></div>
+        </div>
+        <div class="hamster__limb hamster__limb--fr"></div>
+        <div class="hamster__limb hamster__limb--fl"></div>
+        <div class="hamster__limb hamster__limb--br"></div>
+        <div class="hamster__limb hamster__limb--bl"></div>
+        <div class="hamster__tail"></div>
+      </div>
+    </div>
+    <div class="spoke"></div>
+  </div>
+</div>
 <%= javascript_include_tag('home.js')%>
