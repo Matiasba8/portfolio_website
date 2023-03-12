@@ -125,7 +125,7 @@ $('body').on('click', '.ruby-card-cc', function(e) {
 
 $('body').on('click', '.javascript-card-cc', function(e) {
 
-  $('.loader').removeClass('active');
+  $('.loader').toggleClass('active');
 
 
   $.ajax({
